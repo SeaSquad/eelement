@@ -1,4 +1,6 @@
-# eelement
+# SeaSquad Eelement
+
+![Eelement](./eelement.png)
 
 Build HTML using TypeScript.
 
@@ -36,7 +38,7 @@ console.log(myComponent);
 <html>
   <head>
     <title>Hello Page</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
   </head>
   <body class="container">
     <h1>Hello, World!</h1>
