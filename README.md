@@ -13,9 +13,9 @@ npm install @sea-squad/eelement
 ### Usage
 
 ```typescript
-import { e } from "@sea-squad/eelement";
+import { render } from "@sea-squad/eelement";
 
-const myComponent = e.render([
+const myComponent = render([
   "html",
   ["head", ["title", "Hello Page"], ["meta", { charset: "UTF-8" }]],
   [
