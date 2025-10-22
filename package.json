@@ -1,11 +1,29 @@
 {
   "name": "@sea-squad/eelement",
-  "type": "module",
-  "moduleResolution": "nodenext",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "build html using typescript",
+  "keywords": [
+    "html",
+    "template",
+    "engine",
+    "hypermedia",
+    "htmx",
+    "data-star",
+    "datastar",
+    "fixi"
+  ],
+  "homepage": "https://github.com/SeaSquad/eelement#readme",
+  "bugs": {
+    "url": "https://github.com/SeaSquad/eelement/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeaSquad/eelement.git"
+  },
+  "license": "ISC",
+  "author": "Christopher Jenkins",
+  "type": "module",
   "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -15,9 +33,9 @@
     "build": "tsc",
     "clean": "rm -rf dist"
   },
-  "author": "Christopher Jenkins",
-  "license": "ISC",
   "devDependencies": {
     "typescript": "^5.9.3"
-  }
+  },
+  "moduleResolution": "nodenext",
+  "module": "dist/index.js"
 }
