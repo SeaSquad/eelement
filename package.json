@@ -2,9 +2,14 @@
   "name": "@sea-squad/eelement",
   "type": "module",
   "moduleResolution": "nodenext",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "build html using typescript",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "npm run src/index.test.ts",
     "build": "tsc",

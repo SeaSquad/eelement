@@ -1,5 +1,5 @@
-import { escapeHtmlText } from "./html-enc";
-import { VoidTag } from "./void-tag";
+import { escapeHtmlText } from "./html-enc.js";
+import { VoidTag } from "./void-tag.js";
 
 type EelementAttrs = Record<string, string | boolean>;
 
