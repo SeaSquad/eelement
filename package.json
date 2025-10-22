@@ -2,7 +2,7 @@
   "name": "@sea-squad/eelement",
   "type": "module",
   "moduleResolution": "nodenext",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "build html using typescript",
   "main": "dist/index.js",
   "module": "dist/index.js",
