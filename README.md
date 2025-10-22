@@ -22,7 +22,6 @@ npm install @sea-squad/eelement
 - Output is a spec-compliant html string properly accounting for void and non-void elements
 - TypeScript enforces that no children may be passed to void elements
 
-
 ### Usage
 
 ```typescript
@@ -66,13 +65,13 @@ This will serve you well if you:
 - Need Type safety by staying in TypeScript
 - Want something with more guard rails to write proper html than a string template literal
 - Need auto-escaping of user-defined strings
+- Need i18n (can just us a `t` function where needed)
 - Are taking a hypermedia approach (htmx, datastar, fixi.js, plain html, etc)
 - Are writing plain TypeScript web components
 
 This will not be a good fit if you:
 
 - Need to send chunked html responses (produces the whole document string at once)
-
 
 ### Development
 
