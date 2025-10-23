@@ -1,5 +1,32 @@
-import { escapeHtmlText } from "./html-enc.js";
-import { VoidTag } from "./void-tag.js";
+function escapeHtmlText(text: string): string {
+  const map: Record<string, string> = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#x27;",
+  } as const;
+  return text.replace(/[&<>"']/g, (m) => map[m] as string);
+}
+
+const VoidTag = {
+  area: true,
+  base: true,
+  br: true,
+  col: true,
+  embed: true,
+  hr: true,
+  img: true,
+  input: true,
+  link: true,
+  meta: true,
+  param: true,
+  source: true,
+  track: true,
+  wbr: true,
+} as const satisfies Record<string, boolean>;
+
+type VoidTag = keyof typeof VoidTag;
 
 type EelementAttrs = Record<string, string | boolean>;
 
@@ -16,7 +43,7 @@ export function render(doc: Eelement) {
 }
 
 export function renderFragment(elements: Eelement[]) {
-  elements.map((el) => renderElement(el)).join("");
+  return elements.map((el) => renderElement(el)).join("");
 }
 
 export function renderElement(doc: Eelement) {

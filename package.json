@@ -1,6 +1,6 @@
 {
   "name": "@sea-squad/eelement",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "build html using typescript",
   "keywords": [
     "html",
